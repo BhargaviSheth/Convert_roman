@@ -29,7 +29,7 @@ function convertrom(usernum) {
     
 
     for (let i = 0; i < romanNumerals.length; i++) {
-        if (usernumber >= romanNumerals[i].value) {
+        while (usernumber >= romanNumerals[i].value) {
             result += romanNumerals[i].numeral;
             usernumber -= romanNumerals[i].value;
         }
