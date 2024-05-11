@@ -5,10 +5,16 @@
   box-sizing: border-box;
 }
 
+:root{
+  --primary-color: #06b6d4;
+  --off-white:#e2e8f0;
+  --dark-gray: #e4e4e7
+ }
+
 /* Body styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: var(--off-white);
 }
 
 /* Card container styles */
@@ -16,7 +22,7 @@ body {
   max-width: 400px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--dark-gray);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -32,7 +38,8 @@ body {
 .card input[type="text"] {
   width: calc(100% - 20px);
   padding: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
@@ -40,9 +47,9 @@ body {
 
 /* Button styles */
 .card button {
-  width: 100%;
+  width: calc(100% - 20px);
   padding: 10px;
-  background-color: #007bff;
+  background-color: var(--primary-color);
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -51,7 +58,7 @@ body {
 }
 
 .card button:hover {
-  background-color: #0056b3;
+  background-color: #0891b2;
 }
 
 /* Paragraph styles */
@@ -64,5 +71,5 @@ body {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  margin: auto;
+  margin-top: 2rem;
 }
